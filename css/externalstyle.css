@@ -1,0 +1,29 @@
+/* Element selector */
+h1{
+    color:red;
+}
+
+/* Group selector */
+h2,h3,h4{
+    color:blueviolet;
+}
+
+/* Id Selector =*/
+#japu,#pray{
+    color:brown;
+}
+#myself{
+    color:crimson;
+}
+
+/* Class Selector */
+.redcolor{
+    color:red;
+}
+.f30{
+    font-size:30px;
+}
+
+.abc,.efg{
+    color:orange;
+}

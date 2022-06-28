@@ -1,0 +1,150 @@
+:root{
+    --oc:orange;
+    --gr:#0fa616;
+    --bl:rgba(21,14,127,1);
+}
+
+.div1{
+    width:100px;
+    height:80px;
+    background-color:var(--gr);
+
+    transform:rotate(50deg);
+}
+
+.div2{
+    width:200px;
+    height:80px;
+    background-color: var(--gr);
+    transform:rotate(10deg);
+}
+
+.div3{
+    width:200px;
+    height:80px;
+    background-color: var(--oc);
+}
+
+.div4{
+    width:200px;
+    height:80px;
+    color:white;
+    background-color:var(--bl);
+    transform:rotate(50deg);
+}
+
+.div5{
+    width:200px;
+    height:80px;
+    color:white;
+    background-color: var(--gr);
+    transform:scale(0.5);
+}
+
+.country{
+    font-size:16px;
+
+    /* Vendors Profix properties */
+    -webkit-appearance:none; /* chrome, safri, -o- Opera, -ms- Internet Explorer*/
+    -moz-appearance: none; /* Mozila Firefox*/
+    appearance:none;
+
+    padding:10px 25px 10px 10px;
+    background-image:url(./../img/down.png);
+    background-repeat:no-repeat;
+    background-size:15px;
+    background-position:right;
+    background-position-x: 90%;
+}
+
+h1{
+    text-align: center;
+    color:blue;
+}
+
+p.text{
+    text-align:center;
+    color:red;
+}
+
+@media(max-width:1000px){
+    h1{
+        font-size:25px;
+        color:red;
+    }
+    p.text{
+        color:blue;
+    }
+}
+
+.container{
+    width:300px;
+    height:300px;
+    /* background-color:green; */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+
+    position:relative;
+    /* z-index:0; defult */
+}
+.c1{
+    width:320px;
+    height:320px;
+    background:conic-gradient(
+        red 40%,
+        yellow 0 70%,
+        blue 0
+    );
+    border-radius:50%;
+
+    position: absolute;
+    z-index:1;
+    
+}
+.c2{
+    width:300px;
+    height:300px;
+    background:black;
+    border-radius:50%;
+
+    z-index:2;
+    
+}
+.pointer-container{
+    width:20px;
+    height:200px;
+    /* background-color:grey; */
+    position:absolute;
+    top:-50px;
+
+    z-index:4;
+
+    animation-name:myani;
+    animation-duration:7.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    transform-origin: bottom center;
+}
+.pointer{
+    width:20px;
+    height:20px;
+    background-color:orange;
+    border-radius:50%;
+
+    display:block;
+    position:absolute;
+
+}
+
+@keyframes myani{
+    from{
+        transform:rotate(180deg);
+    }
+    to{
+
+        transform:rotate(360deg);
+    }
+}

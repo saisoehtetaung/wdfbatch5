@@ -1,0 +1,48 @@
+/* Universal Selector */
+*{
+    cursor: pointer;
+}
+
+.firstdiv{
+    width: 200px;
+    height:100px;
+    background-color:rgba(248,248,0,1.0);
+    opacity:1;
+    color:red;
+    font-size:30px;
+    cursor:grab;
+}
+
+.seconddiv{
+    width:200px;
+    height:200px;
+    font-size: 20px;
+    border:3px solid blueviolet;
+    /* border:3px; */
+    /* border-style: solid; */
+    /* border-color:blueviolet; */
+    background-image: url('../img/back1.jpeg');
+    background-repeat: no-repeat;
+    /* background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-repeat: repeat; */
+    background-position: center;
+}
+
+.thirddiv{
+    width:300px;
+    height:300px;
+    /* background-color:green; */
+    color:white;
+    font-size:30px;
+    /* background:linear-gradient(blue,orange,red,yellow); */
+    /* background:radial-gradient(green,rgb(174, 177, 16),rgb(0,225,100)); */
+    background:linear-gradient(135deg,rgb(68, 0, 255),orange);
+
+}
+.fourthdiv{
+    width:200px;
+    height:300px;
+    background-image:linear-gradient(45deg,rgb(255, 0, 140,0.3),rgb(68, 0, 255,0.1)),url('../img/may.jpeg');
+    background-repeat: no-repeat;
+}

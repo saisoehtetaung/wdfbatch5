@@ -1,0 +1,25 @@
+.textalign{
+    /* text-align:right; */
+    /* text-align:center; */
+    text-align:justify;
+}
+
+.textdecoration{
+    /* text-decoration:underline; */
+    /* text-decoration:line-through; */
+    text-decoration:overline;
+}
+
+.textline{
+    letter-spacing:1px;
+    /* line-height:10px; */
+    /* line-height:2; */
+    line-height:200%;
+}
+
+.textshadow{
+                /* haz vet blur color */
+    /* text-shadow:-5px 0 4px red; */
+    /* text-shadow:0 5px 5px red; */
+    text-shadow:-5px -5px 5px red;
+}

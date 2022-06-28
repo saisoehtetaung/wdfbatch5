@@ -1,0 +1,137 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap'); */
+
+
+/* Global font integtate by local folder */
+/*@font-face{
+    font-family:Stick;
+    src:local('Stick-Regular'),url('./../libs/fonts/stick/Stick-Regular.ttf') format('woff');
+}
+@font-face{
+    font-family:'Akaya Kanadaka';
+    src:local('AkayaKanadaka-Regular'),url('./../libs/fonts/akayakanadaka/AkayaKanadaka-Regular.ttf') format('woff');
+}*/
+
+
+/* Global font integrate */
+/*.p1{
+    font-family: 'Stick', sans-serif;
+}
+*/
+
+
+/* Local font integrate */
+/* LM(local Machine) */
+/* body{ */
+    /* font-family:FreeSans;
+    font-family: 'Times New Roman'; */
+/* } */
+
+
+
+
+
+/* .p1{
+    font-family: Arial;
+
+/* } */
+/* .p2{
+    font-family: 'Akaya Kanadaka', sans-serif;
+} */
+/* first in first out */
+/* .p3{
+    font-family: 'Stick',Century,Arial,'Times New Roman';
+} */
+
+
+
+
+/* .p1{ */
+    /* text-transform: uppercase; */
+    /* text-transform:lowercase; */
+    /* text-transform: capitalize; */
+
+    /* font-variant:small-caps; */
+
+    /* Text Indentation */
+    /* text-indent:50px; */
+
+    /* font-style:italic; */
+    /* font-weight:bold; */
+    /* font-weight: 600; */
+/* } */
+
+
+
+/* 100=thin
+200=light
+300=book
+400=regular
+500=medium
+600=semi-bold
+700=bold
+800=heavy
+900=extra-black/poster */
+
+/*
+art-rules
+@import
+@page
+@media
+@font-face
+@charset
+@namespace
+*/
+
+
+
+.a1{
+    text-decoration: none;
+}
+
+.a1:visited{
+    color:blueviolet;
+}
+.a1:hover{
+    color:chocolate;
+    font-size:20px;
+}
+
+.menutext{
+    font-family:Arial, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    background-color:green;
+    color:white;
+
+    /* padding: 20px; */
+        /* top&buttom left&right */
+    /* padding:10px 30px; */
+
+    /* padding:10px 20px 30px 40px; */
+
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+
+.menutext:hover{
+    color:gold;
+    background-color: blue;
+    font-size:20px;
+    border-radius: 50px;
+
+    transition: 1s;
+}
+
+.imgdesign{
+    width:100px;
+    height:100px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.imgdesign:hover{
+    width:150px;
+    height:150px;
+}

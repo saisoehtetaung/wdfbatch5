@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title>Form Elements</title>
+    </head>
+    <body>
+        <h1>Form Tag</h1>
+        <fieldset>
+            <legend align="center">This is sample form &#x000A9;</legend>
+        
+            <form action="" method="" enctype="multipart/form-data">
+                
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname" id="firstname" class="" placeholder="Enter your firstname." minlength="4" maxlength="10" required />
+                <br/><br/>
+
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" id="lastname" class="" placeholder="Enter your lastname." minlength="4" maxlength="10" required />
+                <br/><br/>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="" required />
+                <br/><br/>
+
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" class="" minlength="6" maxlength="20" required />
+                <br/><br/>
+
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" class="" min="18" max="50"/>
+                <br/><br/>
+
+                <label>Gender</label>
+                <input type="radio" name="gender" id="genderm" class="" value="1" checked /><label for="genderm">Male</label>
+                <input type="radio" name="gender" id="genderf" class="" value="0" /><label for="genderf">Female</label>
+                <input type="radio" name="gender" id="gendero" class="" value="2" /><label for="gendero">Other</label>
+                <br/><br/>
+
+                <label>Salary</label>
+                <input type="radio" name="salary" id="salaryc" class="" value="0" checked /><label for="salaryc">Cash</label>
+                <input type="radio" name="salary" id="salarym" class="" value="1" /><label for="salarym">Mobile Banking</label>
+                <br/><br/>
+
+                <label>Select your fav color</label>
+                <input type="checkbox" name="color" id="colorred" class="" value="0" /><label for="colorred">Red</label>
+                <input type="checkbox" name="color" id="colorgreen" class="" value="1" /><label for="colorgreen">Green</label>
+                <input type="checkbox" name="color" id="colorblue" class="" value="2" /><label for="colorblue">Blue</label>
+                <input type="checkbox" name="color" id="colorblack" class="" value="3" checked/><label for="colorblack">Black</label>
+                <br/><br/>
+
+                <label for="city">Citizen</label>
+                <select name="city" id="city" class="" >
+                    <option selected disabled>Choose your country</option>
+                    <option value="mm">Myanmar</option>
+                    <option value="thi">Thailand</option>
+                    <option value="ido">Indonisia</option>
+                    <option value="jp">Japan</option>
+                    <option value="slk">Srilinka</option>
+                </select>
+                <br/><br/>
+
+                <label for="role">Role</label>
+                <select neme="role" id="role" class="" multiple>
+                    <option value="1">Manager</option>
+                    <option value="2">Editor</option>
+                    <option value="3">Sale</option>
+                </select>
+                <br/><br/>
+
+                <input type="hidden" name="test" id="test" class="" />
+
+                <label for="dob">Date of Birth</label>
+                <br/>
+                <input type="date" name="dob" id="dob" class="" />
+                <br/><br/>
+
+                <label for="bktime">Booking time</label>
+                <input type="time" name="bktime" id="bktime" class="" />
+                <br/><br/>
+
+                <label for="dt">Date Time</label>
+                <input type="datetime-local" name="dt" id="dt" class="" />
+                <br/><br/>
+
+                <label for="nrcf">NRC Front</label>
+                <input type="file" name="nrcf" id="nrcf" class="" />
+                <label for="nrcb">NRC Back</label>
+                <input type="file" name="nrcb" id="nrcb" class="" multiple />
+                <br/><br/>
+
+                <label for="range">Range</label>
+                <input type="range" name="range" id="range" class="" min="0" max="100" step="20" value="80" />
+                <br/><br/>
+
+                <label for="bio">Bio</label>
+                <textarea rows="20" name="bio" id="bio" class="" placeholder="Write your bio."></textarea>
+                <br/><br/>
+
+                <input type="reset" name="reset" id="reset" class="" value="clear" />
+                <input type="submit" name="submit" id="submit" class="" value="log in" />
+                <button type="submit" name="reg" id="reg" class="">Register</button>
+
+            </form>
+        </fieldset>
+        <hr/>
+        <iframe src="tabletag.html" width="100%" height="5000px" align="center"></iframe>
+    </body>
+</html>
+
+<!--
+    Stand Alone Attributes
+    checked
+    selected
+    disabled
+    multiple
+    required
+-->

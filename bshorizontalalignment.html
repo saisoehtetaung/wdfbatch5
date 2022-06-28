@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Horizontal Alignment</title>
+        <link href="./libs/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <style>
+            .row{
+                height: 100px;
+                background-color: silver;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Horizontal Alignment</h1>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-start text-light">
+                <div class="col-2 bg-primary">Column1</div>
+                <div class="col-2 bg-info">Column2</div>
+                <div class="col-2 bg-success">Column3</div>
+            </div>
+            <hr/>
+
+            <div class="row justify-content-center text-light">
+                <div class="col-2 bg-primary">Column1</div>
+                <div class="col-2 bg-info">Column2</div>
+                <div class="col-2 bg-success">Column3</div>
+            </div>
+            <hr/>
+
+            <div class="row justify-content-end text-light">
+                <div class="col-2 bg-primary">Column1</div>
+                <div class="col-2 bg-info">Column2</div>
+                <div class="col-2 bg-success">Column3</div>
+            </div>
+            <hr/>
+        </div>
+
+<!-- d-flex  -->
+        <script src="./libs/bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+/* .paragraph1::first-line{
+    color:red;
+    font-size:30px;
+} */
+
+/* .paragraph1::before{
+    content:"ABC ";
+} */
+
+/* .paragraph1::after{
+    content:" Kyaw Kyaw";
+} */
+
+/* .paragraph1::first-letter{
+    color:red;
+    font-size:30px;
+} */
+
+.paragraph1::selection{
+    background-color: blueviolet;
+    color:burlywood;
+}
+
+
+/* Pseudo Element 
+::first-line
+::before 
+::after
+::first-letter
+::selection
+
+*/

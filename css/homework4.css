@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "Stick";
+    src: local(Stick-Regular),url("../libs/fonts/stick/Stick-Regular.ttf") format("woff");
+}
+body{
+    background-image: url("../img/background.jpg");
+}
+
+fieldset{
+    height:450px;
+}
+.heading{
+    font-size: 40px;
+    color:cornsilk;
+    text-shadow: -5px -5px 4px black;
+}
+
+legend{
+    text-align: right;
+    font-family:"Stick";
+    color:yellow;
+}
+
+#box{
+    width:300px;
+    height: 270px;
+    border:2px dotted rgb(255, 255, 255);
+    background:rgba(225,225,225,0.2);
+
+}
+.heading2{
+    font-size: 20px;
+    color:cornsilk;
+    text-shadow: -5px -5px 3px black;
+}
+
+.p1{
+    text-align: justify;
+    color:cornsilk;
+}
+.a1{
+    width: 30px;
+    height: 10px;
+    color:orange;
+    background-color: blue;
+    padding:5px;
+    border-radius: 20px;
+    text-decoration: none;
+}

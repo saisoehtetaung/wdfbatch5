@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Regular Function</title>
+    </head>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .box{
+            width: 300px;
+            height: 300px;
+            padding: 10px;
+            box-shadow: 2px 3px 5px rgba(0,0,0,0.3);
+        }
+
+        label{
+            display: block;
+            
+        }
+
+        .form-control{
+            width: 100%;
+            display: block;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+
+        .btn{
+            width: 100%;
+            font-size: 16px;
+            background-color: darkblue;
+            color: #fff;
+            border: none;
+            margin-top: 10px;
+            padding: 3px;
+        }
+    </style>
+    <body>
+
+        <h3>Get Name = <span id="fullname">Text</span></h3>
+
+        <!-- <form action="" method="POST"> -->
+           <div class="box">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control"/>
+                <button class="btn" onclick="getdata()">Get name</button>
+           </div>
+        <!-- </form> -->
+
+        <hr/>
+
+        <script type="text/javascript">
+
+            // Functin Declarations 
+/*
+            function name(){
+                code to be executed;
+            }
+
+            name(); //function recall  */
+
+            // 1. Manual Function 
+
+            function greet(){
+                console.log("Hello Myanmar");
+                console.log("Hello Thailand");
+                console.log("Hello Indonesia");
+            }
+
+            greet();
+            greet();
+            
+            // function hello(){
+            //     console.error("Hello Yangon");
+            // }
+
+            // hello();
+
+            // function hello(){
+            //     window.alert("Hello Yangon");
+            // }
+
+            // hello();
+
+            // function hello(){
+            //     document.write("Hello Yangon");
+            // }
+
+            // hello();
+
+            // function hello(){
+            //     window.alert("Hello Yangon");
+            //     window.alert("Hello Mandalay");
+            //     window.alert("hello Bago");
+                
+            // }
+
+            // hello();
+
+
+            function hello(){
+                document.write("Hello Yangon");
+                document.write("Hello Mandalay");
+                document.write("Hello Bago");
+                document.write("<hr/>");
+            }
+
+            hello();
+
+            function funone(){
+                console.log("I am function one.");
+            }
+
+            function funtwo(){
+                console.log("I am function two");
+
+                funone();
+                funthree();
+            }
+
+            function funthree(){
+                console.log("I am function three");
+            }
+
+            funtwo();
+
+            // ______________
+
+            // Return
+
+            function funfour(){
+                console.log(4);
+            }
+
+            function funfive(){
+                console.log(5);
+            }
+
+            function funsix(){
+                // funfour();
+                // funfive();
+                // console.log("i am 6");
+
+                const num1 = funfour();
+                const num2 = funfive();
+                console.log(num1);
+                console.log(num2);
+                const total = num1 + num2;
+                console.log(total);// result = NaN(not a number)
+            }
+            
+            funsix();
+//      ________________________
+
+            // note : 1 function 1 return (first in first out)
+            function funseven(){
+                return 7;
+            }
+
+            console.log(funseven());
+
+            function funeight(){
+                return 8;
+
+            }
+
+            function funnine(){
+                const num1 = funseven();
+                const num2 = funeight();
+
+                console.log(num1);
+                console.log(num2);
+
+                const total = num1+ num2;
+                return total;
+            }
+
+            console.log(funnine());
+
+            // ___________________
+
+            // 2. Parameter Function
+
+            // i. Single Parameter Function 
+
+            function myfun1(city){
+                // console.log("Hello " + city);
+                console.log(`Hello ${city}`);
+            }
+
+            myfun1("Yangon");
+            myfun1("Mandalay");
+            myfun1();
+
+            function myfun2(city = "Bago"){
+                console.log("Hello " + city);
+            }
+
+            myfun2("Yangon");
+            myfun2("Mandalay");
+            myfun2();
+
+            // ________________________
+
+            // ii. multi Parameter Function 
+
+            function multifun1(x,y,z){
+                console.log(`x value is ${x}, y value is ${y}, z value is ${z}`);
+            }
+
+            let mytextfun = function(){
+                console.log("hello i am text function");
+            }
+
+            mytextfun();
+
+            // ____________________________
+
+            // 3. Constructor function (By String)
+
+            const confunone = new Function("j","k","l","return j+k+l");
+
+            console.log(confunone(10,20,30));
+            console.log(typeof confunone(10,20,30));
+
+            console.log(confunone("10","20","30"));
+            console.log(typeof confunone("10","20","30"));
+
+            console.log(confunone("aung aung","maung maung","kyaw kyaw"));
+
+            //___________________________________
+
+            // 4. Nameless Function(Anonymous Function) 
+
+            let annfunone = function(name,color){
+                document.write(`My name is ${name}, I love ${color} color.`);
+            }
+
+            annfunone("<strong>Sai Soe Htet Aung</strong>","<b>Black</b>");
+           
+            // 5. Self Invoking Function
+
+            (function(){
+                console.log("Save Myanmar");
+            })();
+
+           ( function(name){
+                console.log(`My name is ${name}`);
+            })("kyaw kyaw");
+
+            function getdata(){
+                // console.log("Hay i am working");
+
+                let getname = document.getElementById("name").value;
+
+                // let getFullname = document.getElementById("fullname");
+                // getFullname.innerText = getname;
+
+                // document.getElementById("fullname").innerText = getname;
+                // document.getElementById("fullname").textContent = getname;
+                document.getElementById("fullname").innerHTML = getname;
+
+
+            }
+            
+
+        </script>
+    </body>
+</html>

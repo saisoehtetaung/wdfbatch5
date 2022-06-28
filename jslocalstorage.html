@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Local Storage</title>
+    </head>
+    <body>
+
+        <script type="text/javascript">
+
+            // Store data in local Storage 
+            // localStorage.setItem("name","aung aung");
+            // localStorage.setItem("age",21);
+            // localStorage.setItem("city","Yangon");
+
+            // Update 
+            // Method 1 
+            // localStorage.setItem("name","kyaw kyaw"); 
+            // Method 2 
+            // localStorage.age = 25; 
+
+            // Get 
+            // let getName1= localStorage.getItem("name");
+            // console.log(getName1);
+            // let getAge1 = localStorage.getItem("age");
+            // console.log(getAge1);
+            // console.log(typeof getAge1);
+            // console.log(localStorage.getItem("city"));
+
+            // Delete/Distory 
+            // Method 1 (Single Delete)
+            // localStorage.removeItem("name");
+            // localStorage.removeItem("age");
+
+            // Method 2 (Delete all)
+            // localStorage.clear();
+
+            // _______________________________________ 
+
+            // Session Storage 
+            // Store data in session storage 
+            // sessionStorage.setItem("name","aung aung");
+            // sessionStorage.setItem("age",27);
+            // sessionStorage.setItem("city","Yangon");
+
+            // Update 
+            // Method 1 
+            // sessionStorage.setItem("name","Kyaw Kyaw");
+            // Method 2 
+            // sessionStorage.name= "Aung Aung";
+            // sessionStorage.age = 21; 
+
+            // Get 
+            document.write(sessionStorage.getItem("name"));
+
+            // Delete/Remove 
+            // Method 1 
+            // sessionStorage.removeItem("name");
+
+            // Method 2 
+            sessionStorage.clear();
+
+
+
+
+        </script>
+    </body>
+</html>
+
+<!--
+Cookies   Vs    Local Storage   Vs      Session Storage
+br/sv           br                      br 
+4kb             5-10mb                  5mb 
+all tabs        all tabs                private tab 
+manually set    manually                on tab close  
+-->

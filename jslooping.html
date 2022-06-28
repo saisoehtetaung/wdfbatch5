@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Js Looping</title>
+    </head>
+    <body>
+
+        <script type="text/javascript">
+
+            // 1. for Loop 
+
+            // for(statement 1 ; statement 2 ; statement 3){
+            //     code to executed;
+            // }
+
+            // global scope 
+            let i=0;
+            for(i; i<=10; i++){
+                console.log(i);
+            }
+            console.log("i value is = "+i);
+
+            // for scope 
+            for(let j=0; j<10; j++){
+                console.log(j);
+            }
+            // console.log("i value is = " + j);
+
+            // if() in for loop 
+            for(let j=0; j<10; j++){
+                if(j === 2){
+                    console.log("2 is my fav number");
+                    // break;
+                    continue;
+                }
+
+                if(j === 5){
+                    console.log(j + " is Stop the loop");
+                    break;
+                }
+
+                console.log(j);
+            }
+
+            for(let k=10; k>0; k--){
+                console.log("k value is = " + k);
+            }
+
+            document.write("<h3>For Loop</h3>");
+
+            //for loop with array
+            let myarrs = ["red","green","black","grey","blue","pink"];
+
+            for(let j=0 ; j<myarrs.length ; j++){
+                document.write(myarrs[j]+'<br/>');
+            }
+
+            //for loop with object
+            const people = [
+                {name: 'Aung Aung', age: 20},
+                {name: "Su Su", age: 30},
+                {name: 'Hla Hla', age: 35}
+            ];
+
+            for(let j=0; j<people.length; j++){
+                console.log(j);
+                document.write("name is " + people[j].name+ "-" + people[j].age +"<br/>");
+            }
+
+            document.write("<hr/>");
+            //2. for in loop 
+
+            // for(key in object){
+            //     code to executed;
+            // }
+            
+            document.write("<h3> For in Loop</h3>");
+
+            let students = {
+                name: "Aung Aung",
+                city: "Mandalay",
+                parent: "U Ba"
+            };
+
+            for(key in students){
+                console.log(key);
+                console.log(typeof key);
+                document.write(key + " is " + students[key] + "<br/>")
+            }
+
+            // for in loop with array 
+
+            const ourteams = ["kyaw kyaw","aung aung","maung maung","tun tun"];
+
+            for(idx in ourteams){
+                // console.log(idx);
+                document.write("for in loop result = " + ourteams[idx] + "<br/>");
+            }
+
+            let hays = "Hay December";
+
+            for(key in hays){
+                document.write(hays[key] + "<br/>");
+            }
+
+            document.write("<hr/>");
+            
+            // for of loop 
+            // for(value of array){
+            //     code to be execute;
+            // }
+
+            document.write("<he>for of Loop</h3>");
+
+            const members = ["su su ", "aye aye", "hla hla", "mya may"];
+
+            for(value of members){
+                document.write("for of loop result = "+ value + "<br/>");
+            }
+
+            let greeting = "Hello December";
+            let n=1;
+            for(value of greeting){
+                document.write(value + n);
+                n++;
+            }
+
+            document.write("<hr/>");
+
+            // 4. While loop 
+
+                // while(condition){
+                //         before execute
+                //     code to be executed
+                //         after execute
+                // }
+
+                let b=0;
+
+                while(b<10){
+                    console.log("Number b value is "+ b);
+                    b++;
+                }
+
+                console.log(b);
+
+                let c = 0;
+
+                while(c < 10){
+                    c++;
+                    console.log("Number c value is "+ c);
+                }
+
+                console.log(c);
+
+                document.write("<h3>While Loop</h3>");
+
+                let mycolors = ["red","green","black","grey","blue","pink"];
+                
+                let k=0;
+                while(k < mycolors.length){
+                    document.write(mycolors[k]+"<br/>");
+                    k++;
+                }
+                document.write("<hr/>");
+
+                let laptops = [
+                    {
+                        cpu: "core i5",
+                        ram: "8gb",
+                        hdd: "1tb"
+                    }
+                ];
+
+                let q =0;
+                while(q < laptops.length){
+                    document.write("My laptop cpu is = "+laptops[q].cpu+"<br/>");
+                    document.write("Ram is = "+laptops[q].ram+"<br/>");
+                    document.write("hdd is = "+laptops[q].hdd+"<br/>");
+                    q++;
+                }   
+                document.write("<hr/>");
+            // 5. Do While Loop 
+
+                // do{
+                //     before print
+                //     code to be executed
+                //     after print
+
+                // }while(condition)
+
+                document.write("<h3>Do While Loop</h3>");
+                
+                let m = 0;
+                do{
+                    console.log("M result is "+ m);
+                    m++;
+                }while(m<10);
+
+                let z = 0;
+
+                do{
+                    z++;
+                    console.log("N result is "+ z);
+                }while(z <10);
+
+                const colors=["black","green","blue","red","white"]
+                let l= 0;
+                do{
+                    document.write("Color is " + colors[l]+"<br/>");
+                    l++;
+
+                }while(l<colors.length);
+
+            // 6. forEach loop 
+                // mainarrays.forEach(function(value,index,array){
+                //     code to be executed;
+                // });  
+                document.write("<h3>forEach Loop</h3>");
+                
+                let arrcolorones = ["red","green","black","gray","blue","pink"];
+
+                arrcolorones.forEach(function(arrcolorone){
+                    console.log(arrcolorone);
+                });
+
+                arrcolorones.forEach(function(arrcolorone,idx){
+                    document.write("Index key is = " + idx + " Color is = " + arrcolorone + "<br/>");
+                });
+
+                arrcolorones.forEach(function(arrcolorone,idx,arr){
+                    console.log("Index key is = " + idx + " Color is = " + arrcolorone );
+                    console.log(arr);
+                });
+
+
+            // 7. map 
+            document.write("<h3>Map</h3>");
+
+            const visitors = ["Paing Sis","M Zaw Naw","June","Htet Aung Kyaw"];
+
+            visitors.forEach(function(name){
+                console.log(`forEach result = Mr.${name}`);
+            });
+
+            visitors.map(function(name){
+                console.log(`map result = Mr.${name}`);
+            });
+
+
+            const guys = visitors.map(function(name){
+                return `Mr.${name}`;
+            })
+            console.log(guys);
+            console.log(typeof guys);
+
+            const myguys = visitors.forEach(function(name){
+                return `Mr.${name}`;
+            });
+            console.log(myguys);
+
+
+            const users = [
+                {id:1, name:"Aung Aung"},
+                {id:2, name:"Su Su"},
+                {id:3, name:"Mya Mya"}
+            ];
+
+            const getNames = users.map(user=>user.name);
+
+            console.log(getNames);
+
+            users.map((user,idx)=>{
+                document.write(`Index is ${idx}, Id is ${user.id} and name is ${user.name} <br/>`);
+            })
+
+            const game = "Chess";
+            const winners = ["Mr.Tin","Mr.June","Ms.July"];
+
+            const getresult = winners.map((winner,idx)=>({name:winner, support:game, prize:++idx}));
+
+            console.log(getresult);
+
+
+            // 8. Filter 
+
+            const ages = [20,25,17,35,21,16,14,40,36,18,32,52,12];
+
+            const getov18 = ages.filter(age=>age>=18);
+            console.log(getov18);
+
+            const getover18 = ages.map(age=>age>=18);
+            console.log(getover18);
+        </script>
+    </body>
+</html>

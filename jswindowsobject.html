@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Windows Object</title>
+        <style type="text/css">
+            @media print{
+                *{
+                    visibility: hidden;
+                }
+
+                #printarea *{
+                    visibility: visible;
+                }
+            }
+
+            @page{
+                size: portrait;
+                /* size: landscape;  */
+                size: auto;
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+
+        <button onclick="printme()">Print</button>
+
+        <hr/>
+
+        <div id="printarea">
+            <div>
+                <h2>This is Paragraph 1</h2>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+			Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
+
+            <div>
+                <h2>This is Paragraph 2</h2>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+			Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
+        </div>
+        <div>
+            <h2>This is Paragraph 3</h2>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+        </div>
+
+        <pre>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </pre>
+
+        <button onclick="reload()">Reload</button>
+        <hr/>
+
+        <!-- <div style="margin-top: 1000px;"></div> -->
+
+        
+
+        <script type="text/javascript">
+            function printme(){
+                window.print();
+            }
+
+            let val;
+            // Outer width and height 
+            val = window.outerWidth;
+            console.log("This is outer width = "+ val);
+            val = window.outerHeight;
+            console.log("This is outer height = " + val);
+
+            // Inner Width and Height 
+            val = window.innerWidth;
+            console.log("This is inner width = " + val);
+            val = window.innerHeight;
+            console.log("This is inner height = " + val);
+
+            // Scroll Points 
+            val = window.scrollY;
+            console.log(val);
+
+            val = window.scrollX;
+            console.log(val);
+
+            // Redirect 
+            // window.location.href = "https://google.com";
+
+            // Reload 
+            let reload = ()=>window.location.reload();
+
+            // Navigator Object 
+            // console.log(window.navigator);
+            document.write("navigator.userAgent result = " + window.navigator.userAgent+"<br/>");
+            document.write("navigator.cookieEnabled result = " + window.navigator.cookieEnabled+"<br/>");
+            document.write("navigator.language result = " + window.navigator.language+"<br/>");
+            document.write("navigator.onLine result = " + window.navigator.onLine+"<br/>");
+
+
+
+            
+        </script>
+    </body>
+</html>

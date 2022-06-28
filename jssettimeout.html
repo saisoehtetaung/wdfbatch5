@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Set Timeout</title>
+    </head>
+    <body>
+
+        <h1 id="greeting">Welcome to our site</h1>
+
+        <div>
+            <button id="startalert" class="" onclick="startbtn()">Start Alart</button>
+            <button id="stoptalert" class="" onclick="stopbtn()">Stop Alart</button>
+            
+        </div>
+
+        <hr/>
+
+        <div>
+            <form action="" method="">
+                <input type="text" name="url" id="url" class="" />
+                <input type="button" id="urlbtn" class="" value="Go URL" onclick="gourl()" />
+                <input type="button" id="favurlbtn" class="" value="Fav URL" onclick="favurl('linkin.com')" />
+            </form>
+        </div>
+        <script type="text/javascript">
+            
+            window.setTimeout(newmessage,3000);
+
+            function newmessage(){
+                document.getElementById('greeting').textContent = 'See you later---';
+            }
+
+            function mypopup(){
+                window.alert("welcome sir---");
+            }
+
+            let mytimer
+            function startbtn(){
+                // console.log('start');
+
+                mypopup();
+               mytimer=setTimeout(startbtn,2000);
+            }
+
+            function stopbtn(){
+                clearInterval(mytimer)
+            }
+
+            function gourl(){
+                const geturl = document.getElementById('url').value;
+                window.location = 'https://'+geturl;
+            }
+
+            function favurl(fav){
+                window.location = 'https://'+fav
+            }
+
+        </script>
+    </body>
+</html>

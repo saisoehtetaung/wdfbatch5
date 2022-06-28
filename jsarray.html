@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Js Array</title>
+    </head>
+    <body>
+
+        <script type="text/javascript">
+            let obj = {
+                person1 : "aung aung",
+                person2 : "maung maung",
+                person3 : "kyaw kyaw"
+            };
+            console.log(obj);
+            console.table(obj);
+            console.warn(obj.person1);
+            console.log(typeof obj);
+
+            // Array(Manual Array) 
+            let j = new Array("aung aung","maung maung","kyaw kyaw","zaw zaw");
+
+            console.log(j);
+            console.table(j);   
+            console.warn(j[2]);
+            console.log(typeof j);
+
+            console.log(j.length);
+
+            let arr = ["su su","mya may","hla hla","ma ma"];
+            console.log(arr);
+            console.log(arr[2]);
+            // underfined
+            console.log(arr[5]);
+            // underfined
+            console.log(obj.length);
+
+            let x = [1200,1300,1400,1500];
+            console.log(x[2]);
+            console.log(x.length);
+
+            let k = [20,"Hello","World",true,undefined,null,new Date(),{a: 1,b : 2}];
+            console.log(k);
+            console.log(k.length);
+            console.log(k[0]);
+            console.log(k[4]);
+            console.log(k[6]);
+            console.log(k[7].a);
+
+            let l = [1200,1300,1400,1500];
+            console.log(typeof l);
+            console.log(typeof l[2]);
+
+            console.log(l.indexOf(1500));
+            // if no result = -1
+            console.log(l.indexOf(1900));
+
+            // String is Character Array in Js 
+            const name = "aung ko ko";
+            console.log(name);
+            console.log(name.length);
+            console.log(name[5]);
+            console.log(name.indexOf("o"));
+
+            const m = new Array();
+            m[0] = "green";
+            m[1] = "red";
+            m[4] = "blue";
+            m[1] = "yellow";
+            console.log(m);
+
+            console.log(m[1]);
+
+            const city = "yangon";
+
+            console.log(Array.isArray(m));
+            console.log(Array.isArray(city));
+
+            console.log(typeof m);
+            // Array datatype to String datatype 
+            console.log(m.toString());
+            console.log(typeof m);
+
+            console.log(m.join("/"));
+
+            
+            const n = ["red","black","green","silver"];
+            n[4] = "blue";
+            console.log(n);
+
+            // Add new value to array (add to the end_)
+            n.push("gold");
+            n.push("pink");
+            n.push("violet","white");
+            console.log(n);
+
+            // Remove value&indexnumber ( take off from front)
+            n.shift();
+            n.shift();
+            console.log(n);
+            console.log(n.length);
+            console.log(n[0]);
+
+            // Remove value 
+            delete(n[4]);
+            console.log(n);
+
+            // Add new value to array ( add on to front)
+            n.unshift("tomato");
+            n.unshift("black","grey");
+            console.log(n);
+
+            // Remove value&indexnumber ( take off from end ) 
+            n.pop();
+            n.pop();
+            console.log(n);
+
+                            // Where we want to start,where we want to end 
+                            // index,space(length) 
+            let q = n.splice(1,5);
+            console.log(q);
+            console.log(n);
+
+            const arr1 = ["aung aung","maung maung","kyaw kyaw"];
+            const arr2 = ["su su","nu nu","mya mya"];
+            const arr3 = [100,200,300];
+            console.log(arr1.concat(arr2));
+            console.log(arr2.concat(arr1));
+            console.log(arr2.concat(arr3));
+
+            // Array Sorting (just for string)
+            const arr4 = arr1.concat(arr2);
+
+            console.log(arr4.sort());
+            console.log(arr4.reverse());
+            console.log(arr4);
+
+            // Just reverse (sort() doesn't work in number) 
+            const arr5 = [700,200,100,50,150,10,600];
+            // console.log(arr5.sort(function(x,y){
+            //     return x-y;
+            // }));
+
+            console.log(arr5.sort((x,y)=>x-y));
+
+            console.log(arr5.sort((x,y)=>y-x));
+
+// _____________________________________
+
+
+            function funone(){
+                console.log("I am fun one");
+            }
+
+            function funtwo(){
+                console.log("I am fun two");
+            }
+
+            function funthree(){
+                console.log("I am fun three");
+            }
+
+            let arrfuns = [];
+
+            arrfuns.push(funone);
+            arrfuns.push(funtwo);
+            arrfuns.push(funthree);
+            arrfuns.push(funone);
+
+            console.log(arrfuns);
+
+            // const output = arrfuns.filter(arrfun=>arrfun === funtwo);
+
+            const output = arrfuns.filter(arrfun=>arrfun !== funtwo);
+
+            console.log(output);
+
+
+
+            
+        </script>
+    </body>
+</html>

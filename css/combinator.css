@@ -1,0 +1,86 @@
+/* Tag to tag*/
+/*div span{
+    color:red;
+} */
+
+/* Tag to multi tag  */
+/* div span p{
+    color:red;
+} */
+
+/* Multi tags to Class */
+/* div span .name{
+    color:chocolate;
+} */
+/* div span small.name{
+    color:crimson;
+} */
+
+/* Tag to class */
+/* div .address{
+    color:darkblue;
+} */
+
+
+/* Tag to Multi class */
+/* div .name .age{
+    color:darkgoldenrod;
+} */
+
+/* Class to Class */
+/* .bank .money{
+    color:darkgreen;
+} */
+
+/* Class to Multi Class */
+/* .bank .money .currency{
+    color:darkmagenta;
+} */
+
+/* Class to tag  */
+/* .container p{
+    color:darkmagenta;
+} */
+
+/* Class to tags */
+/* .container b span{
+    color:blueviolet;
+} */
+
+/* Same Class */
+/* .mobile.jpn{
+    color:green;
+}
+.mobile.cn{
+    color:red;
+}
+.mobile.us{
+    color:blue;
+} */
+
+
+/* Class to Same Class */
+/* .vehicle .car.jpn{
+    color:yellow;
+}
+.vehicle .car.cn{
+    color:green;
+}
+.vehicle .car.indo{
+    color:red;
+} */
+
+/* Class to Tag by group Selector */
+/* .div1 b,.div1 p{
+    color:brown;
+} */
+
+/* Child Selector ( > )*/
+/* .div2 > b{
+    color:chartreuse;
+} */
+
+/* General Sibling Selector ( ~ ) */
+.div4 ~ p{
+    color:red;
+}

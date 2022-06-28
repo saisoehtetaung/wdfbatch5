@@ -1,0 +1,45 @@
+.div1{
+    width:200px;
+    height:100px;
+    background-color:brown;
+}
+/* .div1:first-child{
+    background-color:burlywood;
+    color:chartreuse;
+} */
+
+/* .div1:first-of-type{
+    background-color:chocolate;
+    color:cornsilk;
+} */
+
+/* .div1:last-of-type{
+    background-color:chocolate;
+    color:cornsilk;
+} */
+
+/* .div1:nth-of-type(3){
+    background-color:chocolate;
+    color:cornsilk;
+} */
+
+/* .div1:nth-of-type(odd){
+    background-color:chocolate;
+    color:cornsilk;
+} */
+
+.div1:nth-child(even){
+    background-color: crimson;
+    color:cyan;
+}
+
+
+/* Pseudo class
+:visited
+:hover
+:first-child
+:first-of-type
+:last-of-type
+:nth-of-type()
+:nth-child()
+*/
